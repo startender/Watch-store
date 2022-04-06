@@ -49,6 +49,7 @@ app.use(
 );
 
 app.use('/', indexRouter);
+app.use('/admin', adminRouter);
 
 app.listen(PORT, () => {
   console.log(`server started PORT: ${PORT}`);
