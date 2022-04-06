@@ -15,6 +15,8 @@ const session = require('express-session');
 // используется для хранения наших сессий
 const FileStore = require('session-file-store')(session);
 
+const adminRouter = require('./routes/adminRouter');
+
 // Сообщаем express, что в качестве шаблонизатора используется "hbs".
 app.set('view engine', 'hbs');
 // Сообщаем express, что шаблона шаблонизаторая (вью) находятся в папке "ПапкаПроекта/views".
