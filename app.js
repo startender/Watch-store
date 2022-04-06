@@ -15,6 +15,7 @@ const session = require('express-session');
 // используется для хранения наших сессий
 const FileStore = require('session-file-store')(session);
 
+const indexRouter = require('./routes/indexRouter');
 // Сообщаем express, что в качестве шаблонизатора используется "hbs".
 app.set('view engine', 'hbs');
 // Сообщаем express, что шаблона шаблонизаторая (вью) находятся в папке "ПапкаПроекта/views".
@@ -44,6 +45,8 @@ app.use(
     // name: 'userCookie', // имя сессионной куки
   }),
 );
+
+app.use('/', indexRouter);
 
 app.listen(PORT, () => {
   console.log(`server started PORT: ${PORT}`);
