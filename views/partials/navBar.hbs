@@ -1,7 +1,8 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
   <div class="container-fluid">
     <a class="navbar-brand" href="/">WatchStore</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
@@ -16,7 +17,65 @@
           <a class="nav-link" href="#">Авторизация</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link disabled" href="#">Регистрация</a>
+          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            Register
+          </button>
+          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <form name="postForms">
+                  <nav class="navbar navbar-light" style="background-color: #e3f2fd;">
+                    <div class="mb-3">
+                      <label for="title" class="form-label">Name</label>
+                      <input type="text" class="form-control" id="title" name="title">
+                    </div>
+                    <div class="mb-3">
+                      <label for="password" class="form-label">Password</label>
+                      <input type="password" class="form-control" id="password" name="password">
+                    </div>
+                    <div class="mb-3">
+                      <label for="email" class="form-label">Email</label>
+                      <input type="text" class="form-control" id="email" name="email">
+                    </div>
+                    <button type="submit" class="btn btn-danger">Register!</button>
+                  </nav>
+                </form>
+              </div>
+            </div>
+        </li>
+        <li class="nav-item">
+          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            FORM
+          </button>
+          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <form name="postForm">
+                  <nav class="navbar navbar-light" style="background-color: #e3f2fd;">
+                    <div class="mb-3">
+                      <label for="title" class="form-label">Name</label>
+                      <input type="text" class="form-control" id="title" name="title">
+                    </div>
+                    <div class="mb-3">
+                      <label for="phone" class="form-label">Phone</label>
+                      <input type="text" class="form-control" id="phone" name="phone">
+                    </div>
+                    <div class="mb-3">
+                      <label for="email" class="form-label">Email</label>
+                      <input type="text" class="form-control" id="email" name="email">
+                    </div>
+                    <div class="mb-3">
+                      <label for="img" class="form-label">Image</label>
+                      <input type="file" class="form-control" id="img" name="img">
+                    </div>
+                    <button type="submit" class="btn btn-danger">Push!</button>
+                  </nav>
+                </form>
+              </div>
+            </div>
+          </div>
         </li>
       </ul>
     </div>
