@@ -1,7 +1,6 @@
  body {
   background-color: #929692;
- 
-
+position: relative;
 }
 .navbar-brand{
   font-size: xx-large;
@@ -29,6 +28,67 @@ background-color: aliceblue; */
 }
 
 .carousel-item img {
-  height: 800px;
-  width: 800px;
+  display: block;
+  margin: 0 auto;
+  max-height: 800px;
+  max-width: 800px;
+}
+.formRegMain{
+  background:rgb(33, 37, 41) ;
+  color: aliceblue;
+  position: absolute;
+  top: -100%;
+  transition: all 2s;
+  z-index: 10;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 20px;
+  border-radius: 15px;
+  transition: all 2s;
+}
+
+.formReg{
+
+  top: 20%;
+  transition: all 2s;
+  
+}
+/* .formUs{
+
+  top: 20%;
+
+  
+} */
+
+.formUsers{
+  background:rgb(33, 37, 41) ;
+  color: aliceblue;
+  position: absolute;
+  top: -100%;
+  transition: all 2s;
+  z-index: 10;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 20px;
+  border-radius: 15px;
+  transition: all 2s;
+}
+
+
+.formAvt{
+  background:rgb(33, 37, 41) ;
+  color: aliceblue;
+  position: absolute;
+  top: -100%;
+  transition: all 2s;
+  z-index: 10;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 20px;
+  border-radius: 15px;
+  transition: all 2s;
+}
+.formAv{
+  top: 30%;
+  transition: all 2s;
 }
