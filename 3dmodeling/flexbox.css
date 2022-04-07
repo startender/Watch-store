@@ -1,6 +1,8 @@
 img {
-  height: 200px;
-  width: 165px;
+  display: block;
+  margin: 0 auto;
+  height: 400px;
+  width: 295px;
 }
 .title {
   display: flex;
@@ -48,12 +50,8 @@ img {
 
 .filmsnew {
   display: flex;
-  flex-direction: row;
+  flex-wrap: wrap;
   justify-content: space-between;
-  margin-top: 20px;
-  margin-left: 180px;
-  margin-right: 180px;
-  margin-bottom: 60px;
    
 }
 .filmsrec {
@@ -106,21 +104,21 @@ img {
 }
 
 .film1 {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
   position: relative;
+  width: 33%;
+  margin-top: 10%;
+  
   
 }
 .film1 p {
   margin: 0px;
+  text-align: center;
 }
 .film1 .mark {
   position: absolute;
-  top: 10%;
-  left: 10%;
+  top: 5%;
+  left: 50%;
   transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
   background-color: #555;
   color: white;
   font-size: 10px;
