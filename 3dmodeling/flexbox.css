@@ -1,0 +1,198 @@
+img {
+  height: 200px;
+  width: 165px;
+}
+.title {
+  display: flex;
+  justify-content: space-between;
+  background-color: blueviolet;
+  margin: -10px;
+
+}
+
+.elk a{
+  color: aquamarine;
+  text-decoration: none;
+  display: flex;
+  justify-content: start;
+}
+.elk a:hover {
+  color: orange;
+}
+
+.three a{
+  display: flex;
+  text-decoration: none;
+  color: aquamarine;
+  padding: 10px;
+}
+.three {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  
+}
+.three a:hover {
+  color: orange;
+}
+.lc a{
+  color: aquamarine;
+  display: flex;
+  justify-content: end;
+  text-decoration: none;
+}
+.lc a:hover {
+  color:orange;
+}
+
+
+.filmsnew {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 20px;
+  margin-left: 180px;
+  margin-right: 180px;
+  margin-bottom: 60px;
+   
+}
+.filmsrec {
+  display: flex;
+  flex-direction: row ;
+  justify-content: space-between;
+  margin-top: 20px;
+  margin-left: 180px;
+  margin-right: 180px;
+}
+
+.follow, .recomend {
+  text-align: center;
+  margin-top: 80px;
+  color: black;
+  font-size: 32px;
+}
+
+.follow a, .recomend a{
+  color: black;
+  text-decoration: none;
+}
+
+.search {
+  display: inline-flex;
+  border: 1px solid black;
+  border-radius: 20px;
+  padding: 10px;
+}
+
+.search-icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  order: -1;
+}
+
+.search-field {
+  display: inline-flex;
+  border: 1px solid green;
+  border-radius: 20px;
+  padding: 10px;
+  width: 100px;
+  border: 0;
+  background-color: aquamarine;
+}
+
+.search-field:focus {
+  outline: none;
+}
+
+.film1 {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  position: relative;
+  
+}
+.film1 p {
+  margin: 0px;
+}
+.film1 .mark {
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: #555;
+  color: white;
+  font-size: 10px;
+  padding: 4px 4px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: center;
+}
+a {
+  text-decoration: none;
+}
+
+
+@media (min-width: 768px) and (max-width: 1400px) {
+  .three {
+    flex-direction: column;
+    align-items: center;
+    
+  }
+  
+  .elk, .lc {
+    display: flex;
+    align-items: center;
+    
+  }
+  
+  
+  
+  .filmsnew, .filmsrec {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .film1 p {
+    margin-bottom: 15px;
+  }
+}
+
+
+@media (max-width: 767px) {
+  img {
+    height: 110px;
+    width: 91px;
+  }
+  .title {
+    flex-direction: column;
+    align-items: center;
+  }
+  .three {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    
+  }
+  
+  
+  .filmsnew, .filmsrec {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .film1 p {
+    margin-bottom: 5px;
+  }
+  .film1 img {
+    margin-top: 25px;
+  }
+  .film1 .mark {
+    left: 10%;
+    top: 25%;
+  }
+}
