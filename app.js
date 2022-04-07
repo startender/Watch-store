@@ -39,6 +39,7 @@ app.use(express.json());
 
 app.use(
   session({
+    name: 'sid',
     store: new FileStore(), // хранилище для куков - папка с файлами
     secret: process.env.SECRET, // строка для шифрования сессии
     resave: false, // не пересохраняем сессию если не было изменений
@@ -47,6 +48,11 @@ app.use(
     // name: 'userCookie', // имя сессионной куки
   }),
 );
+
+app.use((req, res, next) => {
+  res.locals.user = req.session.user;
+  next();
+});
 
 app.use('/', indexRouter);
 app.use('/admin', adminRouter);
