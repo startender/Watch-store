@@ -17,6 +17,7 @@ const FileStore = require('session-file-store')(session);
 
 const indexRouter = require('./routes/indexRouter');
 const adminRouter = require('./routes/adminRouter');
+const formRouter = require('./routes/formRouter');
 
 // Сообщаем express, что в качестве шаблонизатора используется "hbs".
 app.set('view engine', 'hbs');
@@ -56,6 +57,7 @@ app.use((req, res, next) => {
 
 app.use('/', indexRouter);
 app.use('/admin', adminRouter);
+app.use('/form', formRouter);
 
 app.listen(PORT, () => {
   console.log(`server started PORT: ${PORT}`);
