@@ -1,94 +1,30 @@
 body {
-  background-color: #929692;
-  position: relative;
+  background-color: #e9ffeb;
+  padding: 30px;
+  font: 18px "Lucida Grande", Helvetica, Arial, sans-serif;
+
+}
+summary::marker {
+  font-size: 0em;
+}
+.logo {
+  width: 20px;
+  height: 20px;
+}
+.accordion-button{
+  background-color: rgb(129, 184, 133);
 }
 
-.navbar-brand {
-  font-size: xx-large;
-}
-.collapse1 {
-  display: flex;
-  flex-basis: auto;
-  flex-direction: row-reverse;
-}
-.carousel-item {
-  height: 600px;
+#current_date_time_block2 {
+  color: rgb(66, 9, 221);
+  text-align: right;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-shadow: 1px 1px 1px pink;
 }
 
-.carousel-item img {
-  display: block;
-  margin: 0 auto;
-  max-height: 800px;
-  max-width: 800px;
-}
+.btn-primary1{
 
-.formAvtUs {
-  background: rgb(33, 37, 41);
-  color: aliceblue;
-  position: absolute;
-  top: -100%;
-  transition: all 2s;
-  z-index: 10;
-  left: 50%;
-  transform: translateX(-50%);
-  padding: 20px;
-  border-radius: 15px;
-  transition: all 2s;
-}
-.formAvt {
-  top: 30%;
-  transition: all 2s;
-  
-}
-/* 
-
-
-.btn-primary1{ 
-
-color: aliceblue;
+/* color: aliceblue;
 border-color: aliceblue;
-background-color: aliceblue; 
-} */
-
-
-.formRegMain {
-  background: rgb(33, 37, 41);
-  color: aliceblue;
-  position: absolute;
-  top: -100%;
-  z-index: 10;
-  left: 50%;
-  transform: translateX(-50%);
-  padding: 20px;
-  border-radius: 15px;
-  transition: all 2s;
+background-color: aliceblue; */
 }
-
-.formReg {
-
-  top: 30%;
-  transition: top 2s;
-} 
-
-
- .formUsersPu {
-  background: rgb(33, 37, 41);
-  color: aliceblue;
-  position: absolute;
-  top: -100%;
-  transition: all 2s;
-  z-index: 10;
-  left: 50%;
-  transform: translateX(-50%);
-  padding: 20px;
-  border-radius: 15px;
-  transition: all 2s;
-}
-
-.formUsers {
-
-  top: 30%;
-  transition: all 2s;
-
-} 
-
