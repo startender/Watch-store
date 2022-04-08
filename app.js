@@ -17,7 +17,8 @@ const FileStore = require('session-file-store')(session);
 
 const indexRouter = require('./routes/indexRouter');
 const adminRouter = require('./routes/adminRouter');
-
+const formRouter = require('./routes/formRouter');
+const watchRouter = require('./routes/watchRouter');
 // Сообщаем express, что в качестве шаблонизатора используется "hbs".
 app.set('view engine', 'hbs');
 // Сообщаем express, что шаблона шаблонизаторая (вью) находятся в папке "ПапкаПроекта/views".
@@ -39,6 +40,7 @@ app.use(express.json());
 
 app.use(
   session({
+    name: 'sid',
     store: new FileStore(), // хранилище для куков - папка с файлами
     secret: process.env.SECRET, // строка для шифрования сессии
     resave: false, // не пересохраняем сессию если не было изменений
@@ -48,8 +50,15 @@ app.use(
   }),
 );
 
-app.use('/', indexRouter);
+app.use((req, res, next) => {
+  res.locals.user = req.session.user;
+  next();
+});
+
+// app.use('/', indexRouter);
 app.use('/admin', adminRouter);
+app.use('/form', formRouter);
+app.use('/watch', watchRouter);
 
 app.listen(PORT, () => {
   console.log(`server started PORT: ${PORT}`);

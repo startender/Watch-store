@@ -1,15 +1,12 @@
 body {
-  background-color:rgb(12, 183, 235);
+  background-color: #1B5E20;
   padding: 30px;
   font: 18px "Lucida Grande", Helvetica, Arial, sans-serif;
+
 }
-.navbar{
-  display: flex;
-  flex-wrap: wrap;
-  align-content: stretch;
-  justify-content: space-around;
-  align-items: normal;
-}
-a {
-  color: #00B7FF;
+.btn-primary1{
+
+/* color: aliceblue;
+border-color: aliceblue;
+background-color: aliceblue; */
 }
