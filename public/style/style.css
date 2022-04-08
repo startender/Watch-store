@@ -1,30 +1,18 @@
- body {
+body {
   background-color: #929692;
-position: relative;
+  position: relative;
 }
-.navbar-brand{
+
+.navbar-brand {
   font-size: xx-large;
-  /* margin: 0px 0px 0px 125px; */
 }
-.collapse1{
+.collapse1 {
   display: flex;
   flex-basis: auto;
   flex-direction: row-reverse;
-  /* margin: 0px -440px 0px -65px; */
 }
-/* .btn-primary1{ */
-
-/* color: aliceblue;
-border-color: aliceblue;
-background-color: aliceblue; */
-/* } */
-*/
-
-/* .container{
-} */
 .carousel-item {
   height: 600px;
-  /* width: max-content; */
 }
 
 .carousel-item img {
@@ -33,8 +21,9 @@ background-color: aliceblue; */
   max-height: 800px;
   max-width: 800px;
 }
-.formRegMain{
-  background:rgb(33, 37, 41) ;
+
+.formAvtUs {
+  background: rgb(33, 37, 41);
   color: aliceblue;
   position: absolute;
   top: -100%;
@@ -46,49 +35,60 @@ background-color: aliceblue; */
   border-radius: 15px;
   transition: all 2s;
 }
-
-.formReg{
-
-  top: 20%;
-  transition: all 2s;
-  
-}
-/* .formUs{
-
-  top: 20%;
-
-  
-} */
-
-.formUsers{
-  background:rgb(33, 37, 41) ;
-  color: aliceblue;
-  position: absolute;
-  top: -100%;
-  transition: all 2s;
-  z-index: 10;
-  left: 50%;
-  transform: translateX(-50%);
-  padding: 20px;
-  border-radius: 15px;
-  transition: all 2s;
-}
-
-
-.formAvt{
-  background:rgb(33, 37, 41) ;
-  color: aliceblue;
-  position: absolute;
-  top: -100%;
-  transition: all 2s;
-  z-index: 10;
-  left: 50%;
-  transform: translateX(-50%);
-  padding: 20px;
-  border-radius: 15px;
-  transition: all 2s;
-}
-.formAv{
+.formAvt {
   top: 30%;
   transition: all 2s;
+  
 }
+/* 
+
+
+.btn-primary1{ 
+
+color: aliceblue;
+border-color: aliceblue;
+background-color: aliceblue; 
+} */
+
+
+.formRegMain {
+  background: rgb(33, 37, 41);
+  color: aliceblue;
+  position: absolute;
+  top: -100%;
+  z-index: 10;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 20px;
+  border-radius: 15px;
+  transition: all 2s;
+}
+
+.formReg {
+
+  top: 30%;
+  transition: top 2s;
+} 
+
+
+ .formUsersPu {
+  background: rgb(33, 37, 41);
+  color: aliceblue;
+  position: absolute;
+  top: -100%;
+  transition: all 2s;
+  z-index: 10;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 20px;
+  border-radius: 15px;
+  transition: all 2s;
+}
+
+.formUsers {
+
+  top: 30%;
+  transition: all 2s;
+
+} 
+
