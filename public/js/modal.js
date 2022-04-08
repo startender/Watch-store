@@ -15,7 +15,6 @@ authorization.addEventListener('submit', (e) => {
   authorization.classList.toggle('formAvt');
 });
 
-
 const navBar = document.querySelector('.btn-group');
 const { registration } = document.forms;
 const closeReg = document.querySelector('#closeReg');
@@ -33,8 +32,6 @@ registration.addEventListener('submit', (e) => {
   e.preventDefault();
   registration.classList.toggle('formReg');
 });
-
-
 
 const navBarForm = document.querySelector('.btn-group');
 const { formaUser } = document.forms;

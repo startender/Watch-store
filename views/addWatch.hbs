@@ -1,0 +1,26 @@
+<form name="product">
+  <input type="text" name="title" placeholder="Название часов"></input>
+  <input type="text" name="image" placeholder="вставьте url картинки"></input>
+  <input type="text" name="description" placeholder="Описание часов"></input>
+  {{!-- <input type="text" name="body" placeholder="Описание"></input> --}}
+  <input type="hidden" name="adminId" value="{{adminId}}"></input>
+
+  <button type="submit">Add WATCH</button>
+</form>
+<script defer src="/js/watchFetch.js"></script>
+
+
+<div class="container m-1 row row-cols-auto">
+{{#each addWatch}}
+  <div class="contain col card m-5 p-1" data-id={{this.id}} 
+  style="max-width: 18rem;">
+<div>{{this.title}}</div>
+<img src="{{this.image}}" alt="" style='max-height: 180px; max-width: 230px;'>
+<div>Описание:{{this.description}}</div>
+
+<button><a href="/watch/{{this.id}}">Redact</a></button>
+<button>Delete</button>
+
+  </div>
+{{/each}}
+</div>
