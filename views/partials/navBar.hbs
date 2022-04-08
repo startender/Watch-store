@@ -1,30 +1,24 @@
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <div class="container-fluid">
+<nav class="navbar fixed-top navbar-expand-xxl navbar-dark bg-dark">
+  <div class="container">
     <a class="navbar-brand" href="/">WatchStore</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-target="#navbarContent"
+      aria-controls="navbarContent" aria-expanded="false">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse" id="navbarNav" style="display: flex; justify-content: space-evenly;">
-      <ul class="navbar-nav">
-        
-        <li class="nav-item">
-          <a class="nav-link" href="#">Features</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="admin/signin">Авторизация</a>
-        </li>
-        <li class="nav-item">
-        {{> modal}}
-          
-          <a class="nav-link " href="/admin/signup">Регистрация</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link " href="/admin/logout">Выход</a>
-        </li>
-        
+    <div class="collapse navbar-collapse collapse1" id="navbarContent">
+      <ul class="navbar-nav mr-avto mb-2">
+        <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
+          <div class="btn-group me-2" role="group" aria-label="Second group">
+            <button type="button" class="btn btn-dark">Авторизация</button>
+            <button type="button" class="btn btn-dark">Регистрация</button>
+            <button type="button" class="btn btn-dark">Форма</button>
+            <button type="button" class="btn btn-dark">FAQ</button>
+           </div>
+        </div>
       </ul>
     </div>
   </div>
   <div>
+
+
 </nav>
