@@ -92,3 +92,38 @@ background-color: aliceblue;
 
 } 
 
+.footer_text {
+  font-family: 'Marmelad', sans-serif;
+  margin-top: 30px;
+  padding-right: 120px;
+  text-align: justify;
+  color: #110027;;
+  text-transform: none;
+}
+
+.list{
+  font-family: 'Marmelad', sans-serif;
+  /* margin-top: 30px;
+  padding-right: 120px; */
+  text-align: justify;
+  color: #178102;
+  /* text-transform: none; */
+}
+
+summary::marker {
+  font-size: 0em;
+}
+.logo {
+  width: 20px;
+  height: 20px;
+}
+.accordion-button{
+  background-color: rgb(129, 184, 133);
+}
+
+#current_date_time_block2 {
+  color: rgb(66, 9, 221);
+  text-align: right;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-shadow: 1px 1px 1px pink;
+}
