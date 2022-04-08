@@ -12,7 +12,7 @@ body {
   flex-direction: row-reverse;
 }
 .carousel-item {
-  height: 600px;
+  height: 800px;
 }
 
 .carousel-item img {
@@ -20,6 +20,10 @@ body {
   margin: 0 auto;
   max-height: 800px;
   max-width: 800px;
+}
+a {
+  color: #ededed;
+  text-decoration: none;
 }
 
 .formAvtUs {
@@ -106,7 +110,7 @@ background-color: aliceblue;
   /* margin-top: 30px;
   padding-right: 120px; */
   text-align: justify;
-  color: #178102;
+  color:rgb(33, 37, 41);
   /* text-transform: none; */
 }
 
@@ -126,4 +130,33 @@ summary::marker {
   text-align: right;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   text-shadow: 1px 1px 1px pink;
+}
+.accordion-body {
+  padding: 1rem 1.25rem;
+  display: flex;
+  justify-content: space-around;
+}
+.accordion-button{
+  background-color: rgb(33, 37, 41);
+  color: aliceblue;
+}
+.accordion{
+  background: rgb(33, 37, 41);
+  color: aliceblue;
+}
+.accordion-header{
+  background: rgb(33, 37, 41);
+  color: aliceblue;
+}
+.accordion-item{
+  background: rgb(33, 37, 41);
+  color: aliceblue;
+}
+.footer_text {
+  font-family: 'Marmelad', sans-serif;
+  margin-top: 30px;
+  /* padding-right: 120px; */
+  text-align: justify;
+  color: #110027;;
+  text-transform: none;
 }
