@@ -3,9 +3,9 @@ const bcrypt = require('bcrypt');
 const { Admin } = require('../db/models');
 
 router.route('/signup')
-  .get((req, res) => {
-    res.render('signUp');
-  })
+  // .get((req, res) => {
+  //   res.render('signUp');
+  // })
   .post(async (req, res) => {
     const { name, password, adminKey } = req.body;
     if (name && password && adminKey) {
@@ -20,17 +20,17 @@ router.route('/signup')
           res.redirect('/admin/signup');
         }
       } else {
-        return res.redirect('/admin/signup');
+        return res.redirect('/');
       }
     } else {
-      return res.redirect('/admin/signup');
+      return res.redirect('/');
     }
   });
 
 router.route('/signin')
-  .get((req, res) => {
-    res.render('signIn');
-  })
+  // .get((req, res) => {
+  //   res.render('signIn');
+  // })
   .post(async (req, res) => {
     const { name, password } = req.body;
     if (name && password) {
@@ -39,9 +39,9 @@ router.route('/signin')
         req.session.user = { id: currentAdmin.id, name: currentAdmin.name };
         return res.redirect('/');
       }
-      res.redirect('/admin/signin');
+      res.redirect('/');
     } else {
-      res.redirect('/admin/signin');
+      res.redirect('/');
     }
   });
 
@@ -52,3 +52,4 @@ router.route('/logout')
   });
 
 module.exports = router;
+

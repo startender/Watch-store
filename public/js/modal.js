@@ -10,10 +10,10 @@ navBarUs.addEventListener('click', (e) => {
 closeUs.addEventListener('click', (e) => {
   authorization.classList.toggle('formAvt');
 });
-authorization.addEventListener('submit', (e) => {
-  e.preventDefault();
-  authorization.classList.toggle('formAvt');
-});
+// authorization.addEventListener('submit', (e) => {
+//   e.preventDefault();
+//   authorization.classList.toggle('formAvt');
+// });
 
 const navBar = document.querySelector('.btn-group');
 const { registration } = document.forms;
@@ -28,10 +28,10 @@ closeReg.addEventListener('click', (e) => {
   console.log('====>');
   registration.classList.toggle('formReg');
 });
-registration.addEventListener('submit', (e) => {
-  e.preventDefault();
-  registration.classList.toggle('formReg');
-});
+// registration.addEventListener('submit', (e) => {
+//   e.preventDefault();
+//   registration.classList.toggle('formReg');
+// });
 
 const navBarForm = document.querySelector('.btn-group');
 const { formaUser } = document.forms;
@@ -45,7 +45,7 @@ navBarForm.addEventListener('click', (e) => {
 closeForm.addEventListener('click', (e) => {
   formaUser.classList.toggle('formUsers');
 });
-formaUser.addEventListener('submit', (e) => {
-  e.preventDefault();
-  formaUser.classList.toggle('formUsers');
-});
+// formaUser.addEventListener('submit', (e) => {
+//   e.preventDefault();
+//   formaUser.classList.toggle('formUsers');
+// });
