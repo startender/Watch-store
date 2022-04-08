@@ -27,6 +27,7 @@ router.route('/signup')
     }
   });
 
+  
 router.route('/signin')
   .get((req, res) => {
     res.render('signIn');
@@ -52,8 +53,3 @@ router.route('/logout')
   });
 
 module.exports = router;
-
-
-
-
-
