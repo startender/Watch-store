@@ -55,7 +55,7 @@ app.use((req, res, next) => {
   next();
 });
 
-// app.use('/', indexRouter);
+app.use('/', indexRouter);
 app.use('/admin', adminRouter);
 app.use('/form', formRouter);
 app.use('/watch', watchRouter);
